@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://waller-lab.github.io/DiffuserCam/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="./Miniscope3D_webpage_files/js"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-110853731-1');
+	</script>
+    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>DiffuserCam</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="./Miniscope3D_webpage_files/bootstrap.min.css">
+  	<script src="./Miniscope3D_webpage_files/jquery.min.js"></script>
+  	<script src="./Miniscope3D_webpage_files/bootstrap.min.js"></script>
+	
+	<link href="./Miniscope3D_webpage_files/minimal.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-nav">	
+		<div class="container-fluid">
+    		<ul class="nav navbar-nav">
+      			
+                <li class="nav-item active"><a href="./Miniscope3D_webpage.htm">Home</a></li>
+      			
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./#" data-toggle="dropdown">Build-your-own <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                          <a class="nav-item dropdown-item" href="">CAD files coming soon</a>
+                        </li>
+                        <li>
+                          <a class="nav-item dropdown-item" href="">Tutorial coming soon</a>
+                        </li>
+                    </ul>
+                </li>
+      			
+                <li class="nav-item">
+                    <a href="./Miniscope3D_gallery.htm">Gallery</a>
+                </li>
+                
+      			<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./#" data-toggle="dropdown">Code <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li>
+                            <a class="nav-item dropdown-item" href="https://github.com/Waller-Lab/Miniscope3D">3D Calibration and reconstruction</a>
+                        </li>
+                        <li>
+                            <a class="nav-item dropdown-item" href="">Microlens mask optimization</a>
+                        </li>
+                        <li>
+                            <a class="nav-item dropdown-item" href="">Adaptive stitching</a>
+                        </li>
+                        </ul>
+                </li>
+    		</ul>
+      	</div>
+    </div>
+</nav> 
+
+<div class="container">
+
+	<div class="row">	
+		<h1><b>Miniscope3D</b></h1>
+		<h5>
+            <b>
+                <a href="https://some_url.com">Kyrollos Yanny*</a>,
+                <a href="https://people.eecs.berkeley.edu/~nick.antipa">Nick Antipa*</a>,     <a href="http://some_url.com/">William Liberti</a>, 
+                <a href="https://some_url">Sam Dehaeck</a>, 
+                <a href="https://some_url"> Kristina Monakhova</a>,
+                <a href="https://some_url"> Fanglin Linda Liu</a>,
+                <a href="https://some_url"> Konlin Shen</a>,
+                <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng </a>, and 
+                <a href="http://www.laurawaller.com/">Laura Waller</a>
+            </b>
+        </h5>
+		<br>
+		<img class="center" src="./Miniscope3D_webpage_files/setup.png" style="width:900px"> 
+	</div>
+
+
+	<div class="row">
+		<h3>
+            <b>
+                Abstract
+            </b>
+        </h3>
+		<p>
+            Miniature fluorescence microscopes are a standard tool in systems biology. However, widefield miniature microscopes capture only 2D information, and modifications that enable 3D capabilities increase the size and weight and have poor resolution outside a narrow depth range. Here, we achieve the 3D capability by replacing the tube lens of a conventional 2D Miniscope with an optimized multifocal phase mask at the objective’s aperture stop. Placing the phase mask at the aperture stop significantly reduces the size of the device, and varying the focal lengths enables a uniform resolution across a wide depth range. The phase mask encodes the 3D fluorescence intensity into a single 2D measurement, and the 3D volume is recovered by solving a sparsity-constrained inverse problem. We provide methods for designing and fabricating the phase mask and an efficient forward model that accounts for the field-varying aberrations in miniature objectives. We demonstrate a prototype that is 17 mm tall and weighs 2.5 grams, achieving 2.76 μm lateral, and 15 μm axial resolution across most of the 900 × 700 × 390 μm3 volume at 40 volumes per second. The performance is validated experimentally on resolution targets, dynamic biological samples, and mouse brain tissue. Compared with existing miniature single-shot volume-capture implementations, our system is smaller and lighter and achieves a more than 2× better lateral and axial resolution throughout a 10× larger usable depth range. Our microscope design provides single-shot 3D imaging for applications where a compact platform matters, such as volumetric neural imaging in freely moving animals and 3D motion studies of dynamic samples in incubators and lab-on-a-chip devices.
+        </p>
+	</div>
+
+	<div class="row">
+		<h3><b>Resources</b></h3>
+		<ul>
+			<li>
+                Open source code on <b><a href="https://github.com/Waller-Lab/Miniscope3D">GitHub</a></b>
+            </li>
+            
+			<li>
+                Open access paper, supplement, and sample videos available from
+                <b><a
+                      href="https://doi.org/10.1038/s41377-020-00403-7">Nature Light Science and Applications
+                    </a>
+                </b>
+            </li>
+            
+            <li>
+                Image <b><a href="./Miniscope3D_gallery.htm">Gallery</a></b> 
+            </li>
+		</ul>
+	</div>
+
+	<div class="row">
+		<h3><b>Conference Papers</b></h3>
+
+		<p>
+            K. Yanny, N. Antipa, R. Ng, and L. Waller, "Miniature 3D Fluorescence Microscope Using Random Microlenses," in Biophotonics Congress: Optics in the Life Sciences Congress 2019 (BODA,BRAIN,NTM,OMA,OMP), The Optical Society (Optical Society of America, 2019), paper BT3A.4.
+        </p>
+
+		
+	</div>
+
+<!--
+	<div class="row">
+		<h3><b>Awards</b></h3>
+		<p>Best Demo (people's choice) at the International Conference on Computational Photography (ICCP) 2017:<br>
+		DiffuserCam: A Diffuser Based Lensless Camera<br>
+		Grace Kuo, Nick Antipa, Shreyas Parthasarathy, Camille Biscarrat, Ben Mildenhall, Ren Ng, and Laura Waller</p>
+	</div>
+-->
+	
+<!--
+	<div class="row">
+		<h3><b>Extensions</b></h3>
+
+		<h4><b>3D Microscopy</b></h4>
+		Grace Kuo, Fanglin Linda Liu, Irene Grossrubatscher, Ren Ng, and Laura Waller, "On-chip fluorescence microscopy with a random microlens diffuser," Opt. Express 28, 8384-8399 (2020)
+		<a href="https://www.osapublishing.org/oe/abstract.cfm?uri=oe-28-6-8384">[pdf]</a>
+		<br>
+		<br>
+		Fanglin Linda Liu, Grace Kuo, Nick Antipa, Kyrollos Yanny, and Laura Waller, "Fourier DiffuserScope: single-shot 3D Fourier light field microscopy with a diffuser," Opt. Express 28, 28969-28986 (2020)
+		<a href="https://www.osapublishing.org/oe/abstract.cfm?URI=oe-28-20-28969">[pdf]</a>
+	
+		<h4><b>Physics + Machine Learning reconstructions for lensless imaging </b><a href="https://waller-lab.github.io/LenslessLearning/">[Project Page + Dataset]</a></h4>
+		Kristina Monakhova, Joshua Yurtsever, Grace Kuo, Nick Antipa, Kyrollos Yanny, and Laura Waller. "Learned reconstructions for practical mask-based lensless imaging." Opt. Express 27, 28075-28090 (2019)
+		 <a href="https://www.osapublishing.org/oe/abstract.cfm?uri=oe-27-20-28075">[pdf]</a>
+
+		<h4><b>Single-shot hyperspectral imaging </b><a href="https://waller-lab.github.io/SpectralDiffuserCam/">[Project Page + Dataset]</a></h4>
+		Kristina Monakhova, Kyrollos Yanny, Neerja Aggarwal, and Laura Waller, "Spectral DiffuserCam: lensless snapshot hyperspectral imaging with a spectral filter array," Optica 7, 1298-1307 (2020)
+		<a href="https://www.osapublishing.org/optica/abstract.cfm?uri=optica-7-10-1298">[pdf]</a>
+
+		<h4> <b>Single-shot video (via Rolling shutter)</b> <a href="https://people.eecs.berkeley.edu/~nick.antipa/antipa_files/hsvideo_code_with_data.zip">[Code and sample data]</a></h4>
+		N. Antipa, P. Oare, E. Bostan, R. Ng and L. Waller, "Video from Stills: Lensless Imaging with Rolling Shutter," 2019 IEEE International Conference on Computational Photography (ICCP), Tokyo, Japan, 2019, pp. 1-8, doi: 10.1109/ICCPHOT.2019.8747341.
+		<a href="https://ieeexplore.ieee.org/abstract/document/8747341">[pdf]</a>
+
+		<h4> <b>Multi-sensor DiffuserCam</b></h4>
+		Ellin Zhao, Nicolas Deshler, Kristina Monakhova, Laura Waller, "Multi-sensor lensless imaging: synthetic large-format sensing with a disjoint sensor array" Imaging and Applied Optics Congress, pp. CF2C.6, Optical Society of America, 2020.
+		<a href="http://www.osapublishing.org/abstract.cfm?URI=COSI-2020-CF2C.6">[pdf]</a>
+	</div>
+-->
+
+		
+
+</div>
+<nav 
+     class="navbar navbar-default">
+</nav>
+
+
+
+<script>mendeleyWebImporter = { open: function () { window.postMessage('0.6024381291308509', 'https://waller-lab.github.io') } }</script></body></html>

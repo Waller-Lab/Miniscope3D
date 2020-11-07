@@ -1,1 +1,7 @@
 theme: jekyll-theme-slate
+plugins:
+  - jekyll-seo-tag
+title: Miniscope3D
+tagline: a miniature 3D fluorescence microscope
+url: waller-lab.github.io/Miniscope3D/
+author: Nick Antipa and Kyrollos Yanny

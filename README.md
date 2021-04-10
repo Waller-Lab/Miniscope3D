@@ -5,24 +5,22 @@
 
 
 ## Paper 
-[Spectral DiffuserCam: lensless snapshot hyperspectral imaging with a spectral filter array](https://www.osapublishing.org/optica/abstract.cfm?uri=optica-7-10-1298)
+[Miniscope3D: optimized single-shot miniature 3D fluorescence microscopy](https://www.nature.com/articles/s41377-020-00403-7)
 
 Please cite the following paper when using this code or data:
 
+Yanny, Kyrollos, et al. "Miniscope3D: optimized single-shot miniature 3D fluorescence microscopy." Light: Science & Applications 9.1 (2020): 1-13.
 
 ```
-@article{Monakhova:20,
-author = {Kristina Monakhova and Kyrollos Yanny and Neerja Aggarwal and Laura Waller},
-journal = {Optica},
-number = {10},
-pages = {1298--1307},
-publisher = {OSA},
-title = {Spectral DiffuserCam: lensless snapshot hyperspectral imaging with a spectral filter array},
-volume = {7},
-month = {Oct},
-year = {2020},
-url = {http://www.osapublishing.org/optica/abstract.cfm?URI=optica-7-10-1298},
-doi = {10.1364/OPTICA.397214}
+@article{yanny2020miniscope3d,
+  title={Miniscope3D: optimized single-shot miniature 3D fluorescence microscopy},
+  author={Yanny, Kyrollos and Antipa, Nick and Liberti, William and Dehaeck, Sam and Monakhova, Kristina and Liu, Fanglin Linda and Shen, Konlin and Ng, Ren and Waller, Laura},
+  journal={Light: Science \& Applications},
+  volume={9},
+  number={1},
+  pages={1--13},
+  year={2020},
+  publisher={Nature Publishing Group}
 }
 
 ```

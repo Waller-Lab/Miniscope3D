@@ -1,4 +1,4 @@
-<p align="center"><img width=80% src="https://github.com/Waller-Lab/SpectralDiffuserCam/blob/gh-pages/resources/website_overview_figure.jpg"></p>
+<p align="center"><img width=80% src="https://waller-lab.github.io/Miniscope3D/Miniscope3D_webpage_files/setup.png"></p>
 
 # [Miniscope3D](https://waller-lab.github.io/Miniscope3D/)
 

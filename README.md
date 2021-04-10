@@ -48,6 +48,7 @@ git clone https://github.com/Waller-Lab/Miniscope3D.git
 ```
 
 ### 1) 3D Reconstruction
+Reconstruction code will be availble soon.
 We recommend running this code on a GPU, but it can also be run on a CPU (much slower!). 
 
 ### 2) Microlens Phase Mask Optimization

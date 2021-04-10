@@ -44,13 +44,7 @@ This includes the following files:
 ## Setup
 Clone this project using: 
 ```
-git clone https://github.com/Waller-Lab/SpectralDiffuserCam.git
-```
-
-The dependencies can be installed by using:
-```
-conda env create -f environment.yml
-source activate SpectralDiffuserCam
+git clone https://github.com/Waller-Lab/Miniscope3D.git
 ```
 
 Please place the downloaded data in SampleData folder in the Python and/or Matlab folders.

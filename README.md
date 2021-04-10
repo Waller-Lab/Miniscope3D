@@ -47,13 +47,15 @@ Clone this project using:
 git clone https://github.com/Waller-Lab/Miniscope3D.git
 ```
 
-Please place the downloaded data in SampleData folder in the Python and/or Matlab folders.
-
-[Reconstruction Demo.ipynb](https://github.com/Waller-Lab/SpectralDiffuserCam/blob/master/Python/Reconstruction%20Demo.ipynb) contains an example reconstruction in Python. 
-
-[reconstruction_demo.m](https://github.com/Waller-Lab/SpectralDiffuserCam/blob/master/Matlab/reconstruction_demo.m) contains an example reconstruction in Matlab.
-
+### 1) 3D Reconstruction
 We recommend running this code on a GPU, but it can also be run on a CPU (much slower!). 
 
+### 2) Microlens Phase Mask Optimization
+
+### 3) Adaptive Stitching with Nanoscribe
+This code performs adaptive stitching for randomly spaced microlenses that are multifocal and have aberrations added to them. The adaptive stitching is needed for the microlenses to be correctly 3D printed with Nanoscribe. The code places the stitching artifacts at the boundaries of the microlenses and thus maximizes optical quality. 
+
+The demonstration here will be for the 36 multifocal microlenses with astigmatism and tilt added. This is the phase mask used in the paper. The code also provides the necessary .gwl files needed for the print-job on Nanoscribe
+
 ## Description 
-This repository contains code in both Python and Matlab that is needed to process raw Spectral DiffuserCam images and reconstruct 3D hyperspectral volumes from the raw 2D measurements.  Four example raw images are provided, along with the calibrated point spread function and spectral filter function. Both the Python and Matlab versions support GPU acceleration. In Python, this is accomplished using cupy. We use FISTA for our reconstructions with a 3D total variation prior. 
+This repository contains code for the Miniscope3D paper. The code includes: 1) 3D Reconstruction with Shif-Varying model (matlab). This code reconstructs 3D volumes from a single 2D image. 2) Microlens phase mask optimization (python). This code optimizes a multi-focal randomly spaced mircolens array by addting aberrations and changing focal lengths and positions to imrpove 3D reconstructions (by minimizing PSF cross correlations at different depths). 3) Adaptive Stitching with Nanoscribe (python). This code performs the adaptive stitching needed to 3D print the phase mask with Nanoscribe.

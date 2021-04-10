@@ -9,9 +9,10 @@
 
 Please cite the following paper when using this code or data:
 
-Yanny, Kyrollos, et al. "Miniscope3D: optimized single-shot miniature 3D fluorescence microscopy." Light: Science & Applications 9.1 (2020): 1-13.
 
 ```
+Yanny, Kyrollos, et al. "Miniscope3D: optimized single-shot miniature 3D fluorescence microscopy." Light: Science & Applications 9.1 (2020): 1-13.
+
 @article{yanny2020miniscope3d,
   title={Miniscope3D: optimized single-shot miniature 3D fluorescence microscopy},
   author={Yanny, Kyrollos and Antipa, Nick and Liberti, William and Dehaeck, Sam and Monakhova, Kristina and Liu, Fanglin Linda and Shen, Konlin and Ng, Ren and Waller, Laura},

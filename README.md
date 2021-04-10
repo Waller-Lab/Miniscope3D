@@ -1,4 +1,4 @@
-<p align="center"><img width=80% src="https://waller-lab.github.io/Miniscope3D/Miniscope3D_webpage_files/setup.png"></p>
+<p align="center"><img width=100% src="https://waller-lab.github.io/Miniscope3D/Miniscope3D_webpage_files/setup.png"></p>
 
 # [Miniscope3D](https://waller-lab.github.io/Miniscope3D/)
 

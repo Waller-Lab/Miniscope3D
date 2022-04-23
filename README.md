@@ -52,10 +52,16 @@ This code performs adaptive stitching for randomly spaced microlenses that are m
 The demonstration here will be for the 36 multifocal microlenses with astigmatism and tilt added. This is the phase mask used in the paper. The code also provides the necessary .gwl files needed for the print-job on Nanoscribe
 
 ### 2) 3D Reconstruction
-Reconstruction code will be available soon.
+First, you need to download PSF components and weights from the following links and save them in the same folder:
+https://drive.google.com/file/d/1xRt7rWPZU_P2eyMMFRL1m3cB9H19SPw0/view?usp=sharing
+https://drive.google.com/file/d/1CrL70ShHFMhUnBBhAXZif8-FDB8y9DOl/view?usp=sharing
 
-### 3) Microlens Phase Mask Optimization
-Phase mask optimization code will be available soon.
+You can also download sample waterbear data from: 
+https://drive.google.com/drive/folders/1BxEpoK4wffGD5qdt-hY4on4g-giJ7WZs?usp=sharing
+
+Then, open the Miniscope_3d_shift_varying_main.m file in the 3D Reconstruction folder. This file is the main file that runs the reconstruction. You first need to edit the psf_path variable to the folder path where you downloaded the weights and components. 
+When you run the file, a UI will show up asking you to choose the data file and background file. The data file is the data you want to deconvolve (e.g. waterbear raw data) and the background is a background image captured before taking the data. This background is subtracted from the data file (to account for backreflections)
+
 
 ## Description 
 This repository contains code for the Miniscope3D paper. The code includes: 1) 3D Reconstruction with Shif-Varying model (matlab). This code reconstructs 3D volumes from a single 2D image. 2) Microlens phase mask optimization (python). This code optimizes a multi-focal randomly spaced mircolens array by addting aberrations and changing focal lengths and positions to imrpove 3D reconstructions (by minimizing PSF cross correlations at different depths). 3) Adaptive Stitching with Nanoscribe (python). This code performs the adaptive stitching needed to 3D print the phase mask with Nanoscribe.

@@ -55,6 +55,7 @@ The demonstration here will be for the 36 multifocal microlenses with astigmatis
 First, download the sample data folder mentioned above. This contains PSF components and weights needed for the shift-varying forward model as well as waterbear raw data. 
 
 Then, open the Miniscope_3d_shift_varying_main.m file in the 3D Reconstruction folder. This file is the main file that runs the reconstruction. You first need to edit the psf_path variable to the folder path where you downloaded the weights and components (SVD_2_5um_PSF_5um_1_ds4_components.mat and SVD_2_5um_PSF_5um_1_ds4_weights.mat). 
+
 Then, run the file, a UI will show up asking you to choose a measurement file and background file. The measurement file is the data you want to deconvolve (e.g. waterbear raw data) and the background is a background image captured before taking the data. This background is subtracted from the data file (to account for back reflections)
 
 

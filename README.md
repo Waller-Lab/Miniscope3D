@@ -34,7 +34,7 @@ Yanny, Kyrollos, et al. "Miniscope3D: optimized single-shot miniature 3D fluores
 3. [Description](#Description)
 
 ## Data
-Sample data (needed to run the code) can be found [here](https://drive.google.com/drive/folders/1dmfzkTLFZZFUYW8GC6Vn6SOuZiZq47SS?usp=sharing)
+Sample data and PSFs (needed to run the code) can be found [here](https://drive.google.com/drive/folders/1E9Rt8edPrkn80qfUbDhEnLme98MPtQ2w?usp=sharing)
 
 This includes the following files:
  * calibration.mat - includes the calibratated point spread function, filter function, and wavelength list
@@ -52,15 +52,10 @@ This code performs adaptive stitching for randomly spaced microlenses that are m
 The demonstration here will be for the 36 multifocal microlenses with astigmatism and tilt added. This is the phase mask used in the paper. The code also provides the necessary .gwl files needed for the print-job on Nanoscribe
 
 ### 2) 3D Reconstruction
-First, you need to download PSF components and weights from the following links and save them in the same folder:
-https://drive.google.com/file/d/1xRt7rWPZU_P2eyMMFRL1m3cB9H19SPw0/view?usp=sharing
-https://drive.google.com/file/d/1CrL70ShHFMhUnBBhAXZif8-FDB8y9DOl/view?usp=sharing
+First, download the sample data folder mentioned above. This contains PSF components and weights needed for the shift-varying forward model as well as waterbear raw data. 
 
-You can also download sample waterbear data from: 
-https://drive.google.com/drive/folders/1BxEpoK4wffGD5qdt-hY4on4g-giJ7WZs?usp=sharing
-
-Then, open the Miniscope_3d_shift_varying_main.m file in the 3D Reconstruction folder. This file is the main file that runs the reconstruction. You first need to edit the psf_path variable to the folder path where you downloaded the weights and components. 
-When you run the file, a UI will show up asking you to choose the data file and background file. The data file is the data you want to deconvolve (e.g. waterbear raw data) and the background is a background image captured before taking the data. This background is subtracted from the data file (to account for backreflections)
+Then, open the Miniscope_3d_shift_varying_main.m file in the 3D Reconstruction folder. This file is the main file that runs the reconstruction. You first need to edit the psf_path variable to the folder path where you downloaded the weights and components (SVD_2_5um_PSF_5um_1_ds4_components.mat and SVD_2_5um_PSF_5um_1_ds4_weights.mat). 
+Then, run the file, a UI will show up asking you to choose a measurement file and background file. The measurement file is the data you want to deconvolve (e.g. waterbear raw data) and the background is a background image captured before taking the data. This background is subtracted from the data file (to account for back reflections)
 
 
 ## Description 

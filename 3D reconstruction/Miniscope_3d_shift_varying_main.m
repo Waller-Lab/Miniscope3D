@@ -174,7 +174,7 @@ params.bg_info = bg_info;
     % Read in data
     
 %%
-    init_style = 'loaded';   %Use 'loaded' to load initialization, 'zeros' to start from scratch. Admm will run 2D deconv, then replicate result to all time points
+    init_style = 'zeros';   %Use 'loaded' to load initialization, 'zeros' to start from scratch. Admm will run 2D deconv, then replicate result to all time points
     im_tag = 'rank1_soft_of_TV_TEST';
     if strcmpi(params.data_format,'mat')
         data_in = load(meas_path,mat_var_name);
